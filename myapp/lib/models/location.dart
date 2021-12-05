@@ -5,16 +5,12 @@ class Location {
    final int id;
   final String name;
   final String imagePath;
-  final String userItinerarySummary;
-  final String tourPackageName;
   final List<LocationFact> facts;
 
    Location({
     required this.id,
     required this.name,
     required this.imagePath,
-    required this.userItinerarySummary,
-    required this.tourPackageName,
     required this.facts,
   });
 
@@ -22,39 +18,33 @@ class Location {
     return [
       Location(
           id: 1,
-          name: 'Kiyomizu-dera',
-          imagePath: 'assets/images/kiyomizu-dera.jpg',
-          userItinerarySummary: 'Day 1: 4PM - 5:00PM',
-          tourPackageName: 'Standard Package',
+          name: 'Sixty Dome Mosque',
+          imagePath: 'assets/image/Sixty_Dome_Mosque.jpg',
           facts: [
             LocationFact('Summary',
-                'Kiyomizu-dera, officially Otowa-san Kiyomizu-dera, is an independent Buddhist temple in eastern Kyoto. The temple is part of the Historic Monuments of Ancient Kyoto UNESCO World Heritage site.'),
-            LocationFact(
-                'Architectural Style', 'Japanese Buddhist architecture.'),
+                'The Sixty Dome Mosque is a mosque in Bagerhat, Bangladesh. It is a part of the Mosque City of Bagerhat, a UNESCO World Heritage Site. It is the largest mosque in Bangladesh from the sultanate period (2021–1576). It was built during the Bengal Sultanate by Khan Jahan Ali, the governor of the Sundarbans. It has been described as "one of the most impressive Muslim monuments in the whole of South Asia."'),
+            LocationFact('History', 
+            'In the middle of the 15th century, a Muslim colony was founded in the mangrove forest of the Sundarbans, near the coast in the Bagerhat District by a saint-General, named Khan Jahan Ali. He preached in an affluent city during the reign of Sultan Nasiruddin Mahmud Shah, then known as '"Khalifatabad"'. Khan Jahan adorned this city with more than a dozen mosques, the ruins of which are focused around the most imposing and largest multi-domed mosques in Bangladesh, known as the Shait-Gumbad Masjid. The construction of the mosque was started in 1442 and it was completed in 1459. The mosque was used for prayers, and also as a madrasha and assembly hall.'),
           ]),
       Location(
           id: 2,
-          name: 'Mount Fuji',
-          imagePath: 'assets/images/fuji.jpg',
-          userItinerarySummary: 'Day 1: 9AM - 1:30PM',
-          tourPackageName: 'Standard Package',
+          name: 'Bagha Shahi Mosque',
+          imagePath: 'assets/image/Bagha_Shahi_Mosque.jpg',
           facts: [
             LocationFact('Summary',
-                'Japan’s Mt. Fuji is an active volcano about 100 kilometers southwest of Tokyo. Commonly called “Fuji-san,” it’s the country’s tallest peak, at 3,776 meters. A pilgrimage site for centuries, it’s considered one of Japan’s 3 sacred mountains, and summit hikes remain a popular activity. Its iconic profile is the subject of numerous works of art, notably Edo Period prints by Hokusai and Hiroshige.'),
-            LocationFact('Did You Know',
-                'There are three cities that surround Mount Fuji: Gotemba, Fujiyoshida and Fujinomiya.'),
+                'Bagha Mosque situated at Bagha, about 40km southeast of Rajshahi town, survives in a fairly good state of preservation. The mosque was built on the western bank of a fairly large tank within a brick-walled compound, 48.77m square. The mosque compound could be entered by two old arched gateways - one on the north and the main one on the south comprising a simple oblong curved structure with a turret on either side.'),
+            LocationFact('History', 
+            'The mosque was built in 1523-1524 (930 AH) by Sultan Nusrat Shah, son of Alauddin Shah, the founder of the Husain Shahi dynasty. Later, the mosque was renovated at different times and when the domes of the mosque collapsed, the destroyed mosque was rebuilt in 1897.'),
           ]),
       Location(
           id: 3,
-          name: 'Arashiyama Bamboo Grove',
-          imagePath: 'assets/images/arashiyama.jpg',
-          userItinerarySummary: 'Day 1: 2PM - 3:30PM',
-          tourPackageName: 'Standard Package',
+          name: 'Choto Sona Mosque',
+          imagePath: 'assets/image/Choto_Sona_Mosque.jpg',
           facts: [
             LocationFact('Summary',
-                'While we could go on about the ethereal glow and seemingly endless heights of this bamboo grove on the outskirts of Kyoto, the sight\'s pleasures extend beyond the visual realm.'),
-            LocationFact('How to Get There',
-                'Kyoto airport, with several terminals, is located 16 kilometres south of the city and is also known as Kyoto. Kyoto can also be reached by transport links from other regional airports.'),
+                'Choto Shona Mosque is located in Chapai Nawabganj district of Bangladesh. The mosque is situated about 3 kilometres (1.9 mi) south of the Kotwali Gate and 0.5 kilometres (0.31 mi) to the south-east of the Mughal Tahakhana complex in the Firozpur Quarter.'),
+            LocationFact('History',
+                'The mosque was built during the reign of the Sultan of Bengal Alauddin Husain Shah, between 1493 and 1519. The fifteen domes of the mosque were once gilded, giving the mosque the name of Choto Shona Masjid (Small Golden Mosque). The mosque is one of the best-preserved sultana monuments under protection by the Department of Archaeology and Museums, Governments of Bangladesh. The gilding that gave the building its name does not exist anymore. The mosque premise, which covers an area of 42 m from east to west by 43.5 m from north to south, was originally surrounded by an outer wall (now restored) with a gateway in the middle of the east side.'),
           ]),
     ];
   }

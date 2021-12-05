@@ -28,16 +28,16 @@ class LocationTile extends StatelessWidget {
               style:
                   Theme.of(context).textTheme.subtitle1?.copyWith(color: textColor),
             ),
-            Text(
-              location.userItinerarySummary.toUpperCase(),
-              style: Theme.of(context).textTheme.subtitle2
-            ),
-            Text(
-              location.tourPackageName.toUpperCase(),
-              style: Theme.of(context)
-                  .textTheme
-                  .caption?.copyWith(color: textColor),
-            ),
+            // Text(
+            //   location.userItinerarySummary.toUpperCase(),
+            //   style: Theme.of(context).textTheme.subtitle2
+            // ),
+            // Text(
+            //   location.tourPackageName.toUpperCase(),
+            //   style: Theme.of(context)
+            //       .textTheme
+            //       .caption?.copyWith(color: textColor),
+            // ),
           ]),
     );
   }

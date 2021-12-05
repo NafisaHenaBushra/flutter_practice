@@ -16,15 +16,16 @@ class App extends StatelessWidget {
   }
 
   RouteFactory _routes() {
-    return (settings) {
-      final Map<String, dynamic> arguments = settings.arguments as Map<String, dynamic>;
+    return (RouteSettings? settings) {
+      var data = settings!.arguments??{'id': 0};
+      final Map<String, dynamic> map = data as Map<String, dynamic>;
       Widget screen;
       switch (settings.name) {
         case locationsRoute:
           screen = Locations();
           break;
         case locationDetailRoute:
-          screen = LocationDetail(arguments['id']);
+          screen = LocationDetail(map['id']);
           break;
         default:
           return null;
